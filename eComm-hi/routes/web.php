@@ -1,6 +1,8 @@
 <?php
-
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
 /*
+
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -15,4 +17,6 @@
   //  return view('welcome');
 //});
 
-Route::view("/","login");
+Route::view("/login","login");
+Route::post("/login",[UserController::class,"login"]);
+Route::get("/",[ProductController::class,"index"]);
