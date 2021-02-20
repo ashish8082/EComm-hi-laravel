@@ -15,7 +15,7 @@
    
 </head>
 <body>
-<?php  echo  View::make("header") ?>
+<?php  echo  View::make("header") ;?>
     @yield('contant')
     <?php echo  View:: make ('footer') ?>
 </body>
@@ -28,7 +28,7 @@
 .custom-product
 {
     
- height:600px;
+ height:auto;
 }
 .slider-caption
 {
@@ -49,6 +49,15 @@
 .detail-img
 {
     height:200px;
+}
+.search_box
+{
+    width:500px !important;
+}.cart-list-devider
+{
+    border-bottom:1px solid #ccc;
+    margin-bottom:30px;
+    padding-bottom:30px;
 }
 </style>
 

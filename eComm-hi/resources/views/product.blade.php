@@ -37,7 +37,7 @@
             @foreach($productdata as $item)
             <div class="trending-item">
             <a href="/detail/{{$item['id']}}">
-                <img src="{{$item['gallery']}}" class="trending-image" alt="..."></a>
+                <img src="{{$item['gallery']}}" class="trending-image mx-auto" alt="..."></a>
                 <div class=" ">
                     <h3>{{$item['name']}}</h3>
                 </div>
